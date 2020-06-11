@@ -132,7 +132,7 @@ public class Search extends ListActivity implements Runnable, AdapterView.OnItem
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         HashMap<String,String>map = (HashMap<String,String>)getListView().getItemAtPosition(position);
 
-        final Uri uri=Uri.parse("https://it.swufe.edu.cn/index/tzgg.htm");
+        final Uri uri=Uri.parse("");
         Intent intent=new Intent(Intent.ACTION_VIEW,uri);
         startActivity(intent);
     }
