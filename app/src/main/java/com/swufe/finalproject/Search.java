@@ -88,7 +88,7 @@ public class Search extends ListActivity implements Runnable, AdapterView.OnItem
         Document doc = null;
         try {
             Thread.sleep(1000);
-            doc = Jsoup.connect("https://it.swufe.edu.cn/index/tzgg.htm").get();
+            doc = Jsoup.connect("").get();
             Log.i(TAG, "run: " + doc.title());
             Elements tables = doc.getElementsByTag("span");
 
